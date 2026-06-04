@@ -1,0 +1,14 @@
+# 网络设备巡检系统 - 依赖清单
+# 安装: pip install -r requirements.txt
+# 测试环境: Python 3.11.7 + netmiko 4.3.0
+
+# 核心依赖
+netmiko>=4.0.0,<5.0.0        # SSH 多厂商网络设备连接库
+
+# netmiko 自动安装的依赖 (此处显式列出便于版本锁定)
+paramiko>=3.0.0,<4.0.0       # SSHv2 协议实现
+scp>=0.14.0                   # SCP 文件传输
+pyserial>=3.5                 # 串口连接支持
+PyYAML>=6.0                   # YAML 配置解析
+textfsm>=1.1.0                # 结构化 CLI 输出解析
+ntc-templates>=3.0.0          # TextFSM 模板库 (Cisco/Huawei/Juniper 等)
